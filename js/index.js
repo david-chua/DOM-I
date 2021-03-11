@@ -40,3 +40,59 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let services = document.querySelectorAll('a')[0];
+services.textContent = siteContent["nav"]["nav-item-1"];
+
+let product = document.querySelectorAll('a')[1];
+product.textContent = siteContent["nav"]["nav-item-2"];
+
+let vision = document.querySelectorAll('a')[2];
+vision.textContent = siteContent["nav"]["nav-item-3"];
+
+let features = document.querySelectorAll('a')[3];
+features.textContent = siteContent["nav"]["nav-item-4"];
+
+let about = document.querySelectorAll('a')[4];
+about.textContent = siteContent["nav"]["nav-item-5"];
+
+let contact = document.querySelectorAll('a')[5];
+contact.textContent = siteContent["nav"]["nav-item-6"];
+
+let cta = document.querySelector(".cta-text h1");
+cta.innerHTML = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector(".cta-text button");
+ctaButton.textContent = siteContent['cta']["button"];
+
+let ctaLogo = document.getElementById("cta-img");
+ctaLogo.setAttribute('src', siteContent["cta"]["img-src"]);
+
+let textContentH4 = document.querySelectorAll('.text-content h4');
+
+textContentH4[0].textContent = siteContent["main-content"]["features-h4"];
+textContentH4[1].textContent = siteContent["main-content"]["features-h4"];
+textContentH4[2].textContent = siteContent["main-content"]["features-h4"];
+textContentH4[3].textContent = siteContent["main-content"]["features-h4"];
+textContentH4[4].textContent = siteContent["main-content"]["features-h4"];
+
+let textContentP = document.querySelectorAll('.text-content p');
+
+textContentP[0].textContent = siteContent["main-content"]["features-content"];
+textContentP[1].textContent = siteContent["main-content"]["features-content"];
+textContentP[2].textContent = siteContent["main-content"]["features-content"];
+textContentP[3].textContent = siteContent["main-content"]["features-content"];
+textContentP[4].textContent = siteContent["main-content"]["features-content"];
+
+let middleImg = document.getElementsByClassName("middle-img")[0];
+middleImg.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+let contactInfo = document.getElementsByClassName("contact")[0];
+contactInfo.getElementsByTagName("h4")[0].textContent = siteContent["contact"]["contact-h4"];
+contactInfo.getElementsByTagName("p")[0].textContent = siteContent["contact"]["address"];
+contactInfo.getElementsByTagName("p")[1].textContent = siteContent["contact"]["phone"];
+contactInfo.getElementsByTagName("p")[2].textContent = siteContent["contact"]["email"];
+
+
+let footer = document.getElementsByTagName('footer')[0].getElementsByTagName('p')[0];
+footer.textContent = siteContent["footer"]["copyright"];
